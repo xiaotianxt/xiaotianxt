@@ -1,5 +1,6 @@
 <h1 align="center">Hi 👋, I'm xiaotian</h1>
 <h3 align="center">Happy to produce bugs.</h3>
+<p align="center"> Don't try to emulate the people who came before you. </p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xiaotianxt&label=Profile%20views&color=0e75b6&style=flat" alt="xiaotianxt" /> </p>
 
