@@ -1,4 +1,4 @@
-<p align="center"><img src="img/profile.gif"></img><p>
+<p align="center"><img src="img/profile1.gif"></img><p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xiaotianxt&label=Profile%20views&color=0e75b6&style=flat" alt="xiaotianxt" /> </p>
 
@@ -8,8 +8,8 @@
 - :apple: Big fan of Apple products.
 - :email: How to reach me **tianyp@pku.edu.cn**
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=xiaotianxt&show_icons=true&locale=en&layout=compact" alt="xiaotianxt" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=xiaotianxt&show_icons=true&locale=en&layout=compact" alt="xiaotianxt" /></p>
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&locale=en" alt="xiaotianxt" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&locale=en" alt="xiaotianxt" /></p>
 
-<p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xiaotianxt" alt="xiaotianxt" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xiaotianxt" alt="xiaotianxt" /></a> </p>
