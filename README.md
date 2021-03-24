@@ -4,7 +4,7 @@
 
 
 - :school: Studying in [Peking University](pku.edu.cn)
-- :computer: Ameteur coder with great passion.
+- :computer: Amateur coder with great passion.
 - :apple: Big fan of Apple products.
 - :email: How to reach me **tianyp@pku.edu.cn**
 
