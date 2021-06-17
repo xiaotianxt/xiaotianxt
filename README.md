@@ -1,6 +1,6 @@
 <p align="center"><img src="https://i.loli.net/2021/04/22/7NtkHZfacFyw31b.gif"></img><p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=xiaotianxt&label=个人页面访问次数&color=0e75b6&style=flat" alt="xiaotianxt" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=xiaotianxt&label=Profile%2BViews&color=0e75b6&style=flat" alt="xiaotianxt" /> </p>
 
 
 - :school: Studying in [Peking University](pku.edu.cn)
