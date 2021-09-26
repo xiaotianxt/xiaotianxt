@@ -8,7 +8,7 @@
 - :apple: Big fan of Apple products.
 - :email: How to reach me **tianyp@pku.edu.cn**
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=xiaotianxt&show_icons=true&locale=en&layout=compact" alt="xiaotianxt" /></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact" alt="xiaotianxt" /></p>
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&locale=en" alt="xiaotianxt" /></p>
 
