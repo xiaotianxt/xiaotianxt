@@ -13,3 +13,5 @@
 <p><img align="left" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&locale=en" alt="xiaotianxt" /></p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xiaotianxt" alt="xiaotianxt" /></a> </p>
+
+<p> <img align="left" src="https://raw.githubusercontent.com/xiaotianxt/xiaotianxt/output/github-contribution-grid-snake.svg" alt="contributions" /> </p>
