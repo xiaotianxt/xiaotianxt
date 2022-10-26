@@ -10,21 +10,18 @@
 
 
 
-<div style="display: flex; align-items: center; justify-contents: center;">
-
+<span>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&theme=onedark&hide_border=true">
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
-  <img style="height: 200px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
+  <img height="150px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
 </picture>
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&theme=onedark&hide_border=true">
   <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
-  <img style="height: 200px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
+  <img height="150px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
 </picture>
-
-</div>
+</span>
 
 <p>
 <picture>
