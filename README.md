@@ -9,7 +9,7 @@
 - :email: How to reach me **tianyp@pku.edu.cn**
 
 
-
+<div align="center">
 <span>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&theme=onedark&hide_border=true">
@@ -30,3 +30,4 @@
   <img alt="Github Contributions" src="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.gif">
 </picture>
 </p>
+</div>
