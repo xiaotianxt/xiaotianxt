@@ -8,15 +8,27 @@
 - :apple: Big fan of Apple products.
 - :email: How to reach me **tianyp@pku.edu.cn**
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact" alt="xiaotianxt" /></p>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&locale=en" alt="xiaotianxt" /></p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xiaotianxt" alt="xiaotianxt" /></a> </p>
+<div style="display: flex; align-items: center; justify-contents: center;">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&theme=onedark&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
+  <img style="height: 200px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&theme=onedark&hide_border=true">
+  <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
+  <img style="height: 200px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
+</picture>
+
+</div>
 
 <p>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/dark.gif">
   <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.gif">
   <img alt="Github Contributions" src="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.gif">
 </picture>
