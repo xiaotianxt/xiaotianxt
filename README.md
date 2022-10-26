@@ -25,9 +25,9 @@
 
 <p>
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/dark.gif">
-  <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.gif">
-  <img alt="Github Contributions" src="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.gif">
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.svg">
+  <img alt="Github Contributions" src="https://github.com/xiaotianxt/xiaotianxt/raw/output/ocean.svg">
 </picture>
 </p>
 </div>
