@@ -14,4 +14,10 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=xiaotianxt" alt="xiaotianxt" /></a> </p>
 
-<p> <img align="left" src="https://raw.githubusercontent.com/xiaotianxt/xiaotianxt/output/github-contribution-grid-snake.svg" alt="contributions" /> </p>
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/output/github-snake.svg">
+  <img alt="Github Contributions" src="https://github.com/xiaotianxt/xiaotianxt/raw/output/github-snake.svg">
+</picture>
+</p>
