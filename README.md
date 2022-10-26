@@ -1,4 +1,10 @@
-<p align="center"><img src="https://i.loli.net/2021/04/22/7NtkHZfacFyw31b.gif"></img><p>
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122454.gif">
+  <source media="(prefers-color-scheme: light)" width="100%" srcset="http://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122603.gif">
+  <img height="150px" alt="Github Contributions" width="100%" src="http://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122603.gif">
+</picture>
+</p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=xiaotianxt&label=Profile%20Views&color=0e75b6&style=flat" alt="xiaotianxt" /> </p>
 
