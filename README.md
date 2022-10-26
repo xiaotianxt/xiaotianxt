@@ -1,8 +1,8 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122454.gif">
-  <source media="(prefers-color-scheme: light)" width="100%" srcset="http://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122603.gif">
-  <img height="150px" alt="Github Contributions" width="100%" src="http://scf-deploy-ap-beijing-1301584444.cos.ap-beijing.myqcloud.com/2022-10-26-122603.gif">
+  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/dark.gif">
+  <source media="(prefers-color-scheme: light)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/light.gif">
+  <img height="150px" alt="Github Contributions" width="100%" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/light.gif">
 </picture>
 </p>
 
