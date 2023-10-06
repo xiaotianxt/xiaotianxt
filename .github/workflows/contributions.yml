@@ -19,7 +19,7 @@ jobs:
     timeout-minutes: 10
     steps:
       # generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
-      - uses: Platane/snk@v2
+      - uses: Platane/snk@v3
         with:
           # github user name to read the contribution graph from (**required**)
           # using action context var `github.repository_owner` or specified user
@@ -28,6 +28,9 @@ jobs:
           outputs: |
             dist/dark.svg?palette=github-dark&color_snake=#E5C07B&dark_color_dots=#705A5C,#8A6065,#A36269,#BD5E68,#D65562
             dist/ocean.svg?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       # push the content of <build_dir> to a branch
       # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file> , or as github page
       - name: push github-contribution-grid-snake.svg to the output branch
