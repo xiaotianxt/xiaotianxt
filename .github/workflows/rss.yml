@@ -15,7 +15,7 @@ jobs:
       uses: mxschmitt/action-tmate@v3
     - uses: JasonEtco/rss-to-readme@v1
       with:
-        feed-url: 'https://xiaotian.dev/index.xml'
+        feed-url: https://xiaotian.dev/index.xml
         readme-section: 'feed'
         empty-commits: false
         template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
