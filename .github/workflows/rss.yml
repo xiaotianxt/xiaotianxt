@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: JasonEtco/rss-to-readme@v1
         with:
-          feed-url: https://xiaotian.dev/index.xml
-          readme-section: feed
+          feed-url: 'https://xiaotian.dev/index.xml'
+          readme-section: 'feed'
           empty-commits: false
           template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
