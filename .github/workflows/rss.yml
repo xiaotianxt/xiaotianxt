@@ -10,6 +10,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+
       - uses: JasonEtco/rss-to-readme@v1
         with:
           feed-url: 'https://xiaotian.dev/index.xml'
