@@ -12,9 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: JasonEtco/rss-to-readme@v1
+    - uses: xiaotianxt/rss-to-readme@main
       with:
         feed-url: https://xiaotian.dev/index.xml
-        readme-section: 'feed'
-        empty-commits: false
-        template: "> {{ excerpt }}\n\n[Read more!]({{ url }})"
+        token: ${{ secrets.token }}

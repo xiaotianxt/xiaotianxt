@@ -12,9 +12,8 @@
 - :apple: Big fan of Apple products.
 - :email: How to reach me **tianyp@pku.edu.cn**
 
-<!--START_SECTION:feed-->
-
-<!--END_SECTION:feed-->
+<!-- start: feed -->
+<!-- end: feed -->
 
 <div align="center">
   <p>
