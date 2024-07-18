@@ -78,4 +78,4 @@ runs:
             --header 'Authorization: Bearer ${{ inputs.cf_api_key }}' \
             -o /dev/null -w '%{http_code}')
           echo "Status Code: $status_code"
-          [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ] && echo "Successfully deleted rule with ID $rule_id" || echo "Failed to delete rule with ID $rule_id; Status Code: $status_code" && exit 1e rule with ID $rule_id; Status Code: $status_code" && exit 1
+          [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ] && echo "Successfully deleted rule with ID $rule_id" || echo "Failed to delete rule with ID $rule_id; Status Code: $status_code" && exit 1
