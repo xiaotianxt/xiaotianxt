@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "0 8 * * *"
 
-  # allows to manually run the job at any time  
-  repository_dispatch:
-
   # allows to manually run the job at any time
   workflow_dispatch:
   
