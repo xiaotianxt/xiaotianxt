@@ -2,18 +2,20 @@ name: Cloudflare IP Manager
 description: Manages IP whitelisting in Cloudflare
 inputs:
   cf_zone_id:
-    description: 'Cloudflare Zone ID'
+    description: "Cloudflare Zone ID"
     required: true
   cf_api_key:
-    description: 'Cloudflare API Key'
+    description: "Cloudflare API Key"
     required: true
 outputs:
   rule_id:
-    description: 'The ID of the created access rule'
+    value: ${{ env.rule_id }}
+    description: "The ID of the created access rule"
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Get Public IP
+      shell: bash
       id: ip
       run: |
         result=$(curl https://ipinfo.io/json)
@@ -21,6 +23,7 @@ runs:
         echo "public_ip=$ip" >> $GITHUB_ENV
 
     - name: Make CF API request and extract Rules ID
+      shell: bash
       id: extract_id
       run: |
         ipv4=${{ env.public_ip }}    
@@ -36,6 +39,7 @@ runs:
         echo "rule_id=$id" >> $GITHUB_OUTPUT
 
     - name: Wait for IP to appear in Access Rules
+      shell: bash
       id: wait_for_ip
       run: |
         ipv4=${{ env.public_ip }}
@@ -64,6 +68,7 @@ runs:
         fi
 
     - name: Delete IP from Access Rules
+      shell: bash
       if: ${{ always() }}
       run: |
         rule_id=${{ env.rule_id }}
