@@ -44,9 +44,10 @@ jobs:
         run: |
           ipv4=${{ steps.ip.outputs.public_ip }}
           max_retries=10
-          retry_interval=10
+          retry_interval=1
           count=0
           while [ $count -lt $max_retries ]; do
+            sleep $retry_interval
             response=$(curl --request GET \
               --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules \
               --header 'Content-Type: application/json' \
@@ -58,7 +59,6 @@ jobs:
             fi
             echo "IP $ipv4 not found yet, waiting..."
             count=$((count + 1))
-            sleep $retry_interval
           done
           if [ $count -eq $max_retries ]; then
             echo "Failed to verify IP $ipv4 in access rules after $max_retries retries."
