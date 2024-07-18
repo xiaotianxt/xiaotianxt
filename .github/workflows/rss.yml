@@ -38,6 +38,7 @@ jobs:
           id=$(echo $response | jq -r '.result.id')
           echo "Extracted ID: $id"
           echo "ID=$id" >> $GITHUB_ENV
+          sleep 5
 
       - name: Update README with RSS feed
         uses: xiaotianxt/rss-to-readme@main
