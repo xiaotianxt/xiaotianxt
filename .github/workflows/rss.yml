@@ -55,6 +55,8 @@ jobs:
             ip_in_rules=$(echo $response | jq -r --arg ip "$ipv4" '[.result[] | select(.configuration.value == $ip)] | length')
             if [ "$ip_in_rules" -gt 0 ]; then
               echo "IP $ipv4 is now whitelisted."
+              rule_id=$(echo $response | jq -r --arg ip "$ipv4" '.result[] | select(.configuration.value == $ip) | .id')
+              echo "::set-output name=rule_id::$rule_id"
               break
             fi
             echo "IP $ipv4 not found yet, waiting..."
@@ -70,3 +72,18 @@ jobs:
         with:
           feed-url: https://xiaotian.dev/index.xml
           token: ${{ secrets.token }}
+
+      - name: Delete IP from Access Rules
+        run: |
+          rule_id=${{ steps.wait_for_ip.outputs.rule_id }}
+          response=$(curl --request DELETE \
+            --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules/$rule_id \
+            --header 'Content-Type: application/json' \
+            --header 'Authorization: Bearer ${{ secrets.CF_API_KEY }}')
+          echo "Delete Response: $response"
+          success=$(echo $response | jq -r '.success')
+          if [ "$success" != "true" ]; then
+            echo "Failed to delete rule with ID $rule_id"
+            exit 1
+          fi
+          echo "Successfully deleted rule with ID $rule_id"
