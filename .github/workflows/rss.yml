@@ -38,7 +38,32 @@ jobs:
           id=$(echo $response | jq -r '.result.id')
           echo "Extracted ID: $id"
           echo "ID=$id" >> $GITHUB_ENV
-          sleep 5
+
+      - name: Wait for IP to appear in Access Rules
+        id: wait_for_ip
+        run: |
+          ipv4=${{ steps.ip.outputs.public_ip }}
+          max_retries=10
+          retry_interval=10
+          count=0
+          while [ $count -lt $max_retries ]; do
+            response=$(curl --request GET \
+              --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules \
+              --header 'Content-Type: application/json' \
+              --header 'Authorization: Bearer ${{ secrets.CF_API_KEY }}')
+            ip_in_rules=$(echo $response | jq -r --arg ip "$ipv4" '[.result[] | select(.configuration.value == $ip)] | length')
+            if [ "$ip_in_rules" -gt 0 ]; then
+              echo "IP $ipv4 is now whitelisted."
+              break
+            fi
+            echo "IP $ipv4 not found yet, waiting..."
+            count=$((count + 1))
+            sleep $retry_interval
+          done
+          if [ $count -eq $max_retries ]; then
+            echo "Failed to verify IP $ipv4 in access rules after $max_retries retries."
+            exit 1
+          fi
 
       - name: Update README with RSS feed
         uses: xiaotianxt/rss-to-readme@main
