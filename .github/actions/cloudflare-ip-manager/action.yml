@@ -73,5 +73,4 @@ runs:
         post: |
           rule_id=${{ env.rule_id }}
           echo "Deleting rule with ID: $rule_id"
-          curl --request DELETE --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules/$rule_id --header 'Content-Type: application/json' --header 'Authorization: Bearer ${{ inputs.cf_api_key }}'
-          if [$? -eq 0]; then echo "Rule deleted successfully"; else echo "Failed to delete rule"; fi
+          curl --request DELETE --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules/$rule_id --header 'Content-Type: application/json' --header 'Authorization: Bearer ${{ inputs.cf_api_key }}' || exit 1
