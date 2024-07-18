@@ -72,10 +72,19 @@ runs:
       with:
         post: |
           rule_id=${{ env.rule_id }}
+          echo "Deleting rule with ID: $rule_id"
           status_code=$(curl --request DELETE \
             --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules/$rule_id \
             --header 'Content-Type: application/json' \
             --header 'Authorization: Bearer ${{ inputs.cf_api_key }}' \
-            -o /dev/null -w '%{http_code}')
+            -o /dev/null -w '%{http_code}' --silent --show-error)
           echo "Status Code: $status_code"
-          [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ] && echo "Successfully deleted rule with ID $rule_id" || echo "Failed to delete rule with ID $rule_id; Status Code: $status_code" && exit 1
+          if [ -z "$status_code" ]; then
+            echo "Failed to retrieve status code. Curl command might have failed."
+            exit 1
+          elif [ "$status_code" -ge 200 ] && [ "$status_code" -lt 300 ]; then
+            echo "Successfully deleted rule with ID $rule_id"
+          else
+            echo "Failed to delete rule with ID $rule_id; Status Code: $status_code"
+            exit 1
+          fi
