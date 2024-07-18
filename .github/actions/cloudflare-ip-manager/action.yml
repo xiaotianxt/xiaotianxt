@@ -38,48 +38,31 @@ runs:
         echo "rule_id=$id" >> $GITHUB_ENV
         echo "rule_id=$id" >> $GITHUB_OUTPUT
 
-    - name: Wait for IP to appear in Access Rules
-      shell: bash
-      id: wait_for_ip
-      run: |
-        ipv4=${{ env.public_ip }}
-        max_retries=10
-        retry_interval=1
-        count=0
-        while [ $count -lt $max_retries ]; do
-          sleep $retry_interval
-          response=$(curl --request GET \
-            --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules \
-            --header 'Content-Type: application/json' \
-            --header 'Authorization: Bearer ${{ inputs.cf_api_key }}')
-          ip_in_rules=$(echo $response | jq -r --arg ip "$ipv4" '[.result[] | select(.configuration.value == $ip)] | length')
-          if [ "$ip_in_rules" -gt 0 ]; then
-            echo "IP $ipv4 is now whitelisted."
-            rule_id=$(echo $response | jq -r --arg ip "$ipv4" '.result[] | select(.configuration.value == $ip) | .id')
-            echo "rule_id=$rule_id" >> $GITHUB_OUTPUT
-            break
+    - uses: webiny/action-post-run@latest
+      id: post-run-command
+      with:
+        run: |
+          ipv4=${{ env.public_ip }}
+          max_retries=10
+          retry_interval=1
+          count=0
+          while [ $count -lt $max_retries ]; do
+            sleep $retry_interval
+            response=$(curl --request GET \
+              --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules \
+              --header 'Content-Type: application/json' \
+              --header 'Authorization: Bearer ${{ inputs.cf_api_key }}')
+            ip_in_rules=$(echo $response | jq -r --arg ip "$ipv4" '[.result[] | select(.configuration.value == $ip)] | length')
+            if [ "$ip_in_rules" -gt 0 ]; then
+              echo "IP $ipv4 is now whitelisted."
+              rule_id=$(echo $response | jq -r --arg ip "$ipv4" '.result[] | select(.configuration.value == $ip) | .id')
+              echo "rule_id=$rule_id" >> $GITHUB_OUTPUT
+              break
+            fi
+            echo "IP $ipv4 not found yet, waiting..."
+            count=$((count + 1))
+          done
+          if [ $count -eq $max_retries ]; then
+            echo "Failed to verify IP $ipv4 in access rules after $max_retries retries."
+            exit 1
           fi
-          echo "IP $ipv4 not found yet, waiting..."
-          count=$((count + 1))
-        done
-        if [ $count -eq $max_retries ]; then
-          echo "Failed to verify IP $ipv4 in access rules after $max_retries retries."
-          exit 1
-        fi
-
-    - name: Delete IP from Access Rules
-      shell: bash
-      if: ${{ always() }}
-      run: |
-        rule_id=${{ env.rule_id }}
-        response=$(curl --request DELETE \
-          --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules/$rule_id \
-          --header 'Content-Type: application/json' \
-          --header 'Authorization: Bearer ${{ inputs.cf_api_key }}')
-        echo "Delete Response: $response"
-        success=$(echo $response | jq -r '.success')
-        if [ "$success" != "true" ]; then
-          echo "Failed to delete rule with ID $rule_id"
-          exit 1
-        fi
-        echo "Successfully deleted rule with ID $rule_id"
