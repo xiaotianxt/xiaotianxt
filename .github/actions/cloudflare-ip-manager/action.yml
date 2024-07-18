@@ -78,8 +78,4 @@ runs:
             --header 'Authorization: Bearer ${{ inputs.cf_api_key }}')
           echo "Delete Response: $response"
           success=$(echo $response | jq -r '.success')
-          if [ "$success" != "true" ]; then \
-            echo "Failed to delete rule with ID $rule_id" \
-            exit 1 \
-          fi
-          echo "Successfully deleted rule with ID $rule_id"
+          [ "$success" != "true" ] && echo "Failed to delete rule with ID $rule_id" && exit 1 || echo "Successfully deleted rule with ID $rule_id"
