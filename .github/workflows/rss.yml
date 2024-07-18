@@ -1,11 +1,16 @@
 name: update readme with RSS feed
 
 on:
-  schedule:
-    - cron: "0 8 * * *"
+  # schedule:
+    # - cron: "0 8 * * *"
 
   # allows to manually run the job at any time
   workflow_dispatch:
+
+  # allows to trigger by some other repo
+  repository_dispatch:
+    types: [rss-update]
+
   
   # run on every push on the master branch
   # push:
