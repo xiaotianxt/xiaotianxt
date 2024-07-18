@@ -11,9 +11,35 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+      - name: Checkout
+        uses: actions/checkout@v3
 
-    - uses: xiaotianxt/rss-to-readme@main
-      with:
-        feed-url: https://xiaotian.dev/index.xml
-        token: ${{ secrets.token }}
+      - name: Public IP
+        id: ip
+        uses: haythem/public-ip@v1.3
+
+      - name: Print Public IP
+        run: |
+          echo ${{ steps.ip.outputs.ipv4 }}
+          echo ${{ steps.ip.outputs.ipv6 }}
+
+      - name: Make CF API request and extract Rules ID
+        id: extract_id
+        run: |
+          ipv4=${{ steps.ip.outputs.ipv4 }}    
+          response=$(curl --request POST \
+            --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules \
+            --header 'Content-Type: application/json' \
+            --header 'X-Auth-Email: ${{ secrets.CF_MAIL }}' \
+            --header 'X-Auth-Key: ${{ secrets.CF_API_KEY }}' \
+            --data '{"mode":"whitelist","configuration":{"target":"ip","value":"'"$ipv4"'"},"notes":"Github Action IP for API ACCESS"}')
+          echo "Response: $response"
+          id=$(echo $response | jq -r '.result.id')
+          echo "Extracted ID: $id"
+          echo "ID=$id" >> $GITHUB_ENV
+
+      - name: Update README with RSS feed
+        uses: xiaotianxt/rss-to-readme@main
+        with:
+          feed-url: https://xiaotian.dev/index.xml
+          token: ${{ secrets.token }}
