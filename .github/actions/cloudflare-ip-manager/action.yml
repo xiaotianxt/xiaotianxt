@@ -68,9 +68,9 @@ runs:
         fi
 
     - name: Delete IP from Access Rules
-      uses: webiny/action-post-run@3.1.0
+      uses: gacts/run-and-post-run@v1
       with:
-        run: |
+        post: |
           rule_id=${{ env.rule_id }}
           response=$(curl --request DELETE \
             --url https://api.cloudflare.com/client/v4/zones/${{ inputs.cf_zone_id }}/firewall/access_rules/rules/$rule_id \
