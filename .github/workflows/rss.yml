@@ -14,19 +14,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Public IP
+      - name: Get Public IP
         id: ip
-        uses: haythem/public-ip@v1.3
-
-      - name: Print Public IP
         run: |
-          echo ${{ steps.ip.outputs.ipv4 }}
-          echo ${{ steps.ip.outputs.ipv6 }}
+          result=$(curl https://ipinfo.io/json)
+          ip=$(echo $result | jq -r '.ip')
+          echo "::set-output name=public_ip::$ip"
+
+      - name: Use Public IP
+        run: |
+          echo "The public IP is ${{ steps.ip.outputs.public_ip }}"
 
       - name: Make CF API request and extract Rules ID
         id: extract_id
         run: |
-          ipv4=${{ steps.ip.outputs.ipv4 }}    
+          ipv4=${{ steps.ip.outputs.public_ip }}    
           response=$(curl --request POST \
             --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules \
             --header 'Content-Type: application/json' \
