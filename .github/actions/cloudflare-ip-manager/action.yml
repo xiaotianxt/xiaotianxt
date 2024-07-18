@@ -38,7 +38,7 @@ runs:
         echo "rule_id=$id" >> $GITHUB_ENV
         echo "rule_id=$id" >> $GITHUB_OUTPUT
 
-    - uses: webiny/action-post-run@latest
+    - uses: webiny/action-post-run@3.1.0
       id: post-run-command
       with:
         run: |
