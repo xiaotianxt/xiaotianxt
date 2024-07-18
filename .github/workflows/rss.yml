@@ -32,8 +32,7 @@ jobs:
           response=$(curl --request POST \
             --url https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/firewall/access_rules/rules \
             --header 'Content-Type: application/json' \
-            --header 'X-Auth-Email: ${{ secrets.CF_MAIL }}' \
-            --header 'X-Auth-Key: ${{ secrets.CF_API_KEY }}' \
+            --header 'Authorization: Bearer ${{ secrets.CF_API_KEY }}' \
             --data '{"mode":"whitelist","configuration":{"target":"ip","value":"'"$ipv4"'"},"notes":"Github Action IP for API ACCESS"}')
           echo "Response: $response"
           id=$(echo $response | jq -r '.result.id')
