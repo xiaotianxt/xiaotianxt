@@ -34,4 +34,4 @@ jobs:
         uses: xiaotianxt/rss-to-readme@main
         with:
           feed-url: https://xiaotian.dev/index.xml
-          token: ${{ secrets.token }}
+          token: ${{ secrets.TOKEN }}
