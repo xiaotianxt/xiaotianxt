@@ -25,7 +25,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Bypass Cloudflare for GitHub Action
-        uses: xiaotianxt/bypass-cloudflare-for-github-action@v1.1.0
+        uses: xiaotianxt/bypass-cloudflare-for-github-action@19dd5c383f68ada79c32a5e9c509c9bdd5aa3ea5
         with:
           cf_zone_id: ${{ secrets.CF_ZONE_ID }}
           cf_api_token: ${{ secrets.CF_API_TOKEN }}
