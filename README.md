@@ -7,10 +7,10 @@
 </p>
 
 
-- :school: Studying in [Peking University](pku.edu.cn)
+- :school: Studying in [Carnegie Mellon University](cmu.edu)
 - :computer: Amateur coder with great passion.
 - :apple: Big fan of Apple products.
-- :email: How to reach me **tianyp@pku.edu.cn**
+- :email: How to reach me **yupei@cmu.edu**
 
 <!-- start: feed -->
 - [Toolist](https://xiaotian.dev/develop/toolist/)
