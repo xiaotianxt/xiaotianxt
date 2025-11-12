@@ -1,11 +1,10 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/dark.gif">
-  <source media="(prefers-color-scheme: light)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/light.gif">
-  <img height="150px" alt="Github Contributions" width="100%" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/light.gif">
+  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-white.svg">
+  <source media="(prefers-color-scheme: light)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg">
+  <img height="150px" alt="Github Contributions" width="100%" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg">
 </picture>
 </p>
-
 
 - :school: Studying in [Carnegie Mellon University](cmu.edu)
 - :computer: Amateur coder with great passion.
