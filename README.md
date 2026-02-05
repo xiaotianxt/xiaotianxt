@@ -6,10 +6,10 @@
 </picture>
 </p>
 
-- :school: Studying in [Carnegie Mellon University](cmu.edu)
+- :school: Studying in [Carnegie Mellon University](https://www.cmu.edu/)
 - :computer: Amateur coder with great passion.
 - :apple: Big fan of Apple products.
-- :email: How to reach me **yupei@cmu.edu**
+- :email: How to reach me **yupei@xiaotian.dev**
 
 <!-- start: feed -->
 - [Toolist](https://xiaotian.dev/develop/toolist/)
