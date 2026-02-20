@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-labelledby="title desc">
+  <title id="title">Top Languages</title>
+  <desc id="desc">Generating top languages card...</desc>
+  <rect width="495" height="195" rx="8" ry="8" fill="#ffffff" stroke="#d0d7de" />
+  <text x="248" y="92" text-anchor="middle" fill="#57606a" font-family="Arial, sans-serif" font-size="18">Top Languages</text>
+  <text x="248" y="122" text-anchor="middle" fill="#6e7781" font-family="Arial, sans-serif" font-size="14">Generating card via GitHub Actions...</text>
+</svg>

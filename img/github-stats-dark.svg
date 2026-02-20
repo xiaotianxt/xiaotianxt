@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="195" viewBox="0 0 495 195" role="img" aria-labelledby="title desc">
+  <title id="title">GitHub Stats</title>
+  <desc id="desc">Generating GitHub stats card...</desc>
+  <rect width="495" height="195" rx="8" ry="8" fill="#0d1117" />
+  <text x="248" y="92" text-anchor="middle" fill="#8b949e" font-family="Arial, sans-serif" font-size="18">GitHub Stats</text>
+  <text x="248" y="122" text-anchor="middle" fill="#6e7681" font-family="Arial, sans-serif" font-size="14">Generating card via GitHub Actions...</text>
+</svg>

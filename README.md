@@ -26,14 +26,14 @@
 
   <span>
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&theme=onedark&hide_border=true&bg_color=0D1117">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
-      <img height="150px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api/top-langs/?username=xiaotianxt&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/top-langs-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/top-langs-light.svg">
+      <img height="150px" alt="Top Languages" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/top-langs-light.svg">
     </picture>
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&theme=onedark&hide_border=true&bg_color=0D1117">
-      <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
-      <img height="150px" alt="Github Contributions" src="https://github-readme-stats.vercel.app/api?username=xiaotianxt&show_icons=true&hide_border=true">
+      <source media="(prefers-color-scheme: dark)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/github-stats-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/github-stats-light.svg">
+      <img height="150px" alt="GitHub Stats" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/github-stats-light.svg">
     </picture>
   </span>
 
