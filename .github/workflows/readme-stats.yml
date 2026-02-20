@@ -55,8 +55,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git fetch origin main
-          git rebase origin/main
           git add img/top-langs-dark.svg img/top-langs-light.svg img/github-stats-dark.svg img/github-stats-light.svg
           git diff --cached --quiet && exit 0
           git commit -m "chore: update profile stats cards"
@@ -65,6 +63,5 @@ jobs:
           fi
 
           # another push landed while this job was running; replay and retry once
-          git fetch origin main
-          git rebase origin/main
+          git pull --rebase origin main
           git push
