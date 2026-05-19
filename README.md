@@ -20,6 +20,8 @@ I'm currently vibe-coding small Rust tools and AI skills that make local workflo
 - 💸 [mon](https://github.com/xiaotianxt/mon): AI-native Monarch Money CLI for structured local finance workflows.
 - 🧰 [skills](https://github.com/xiaotianxt/skills): Personal Codex and agent skills for Gmail, Calendar, GitHub PRs, OCR, learning workflows, and local automation.
 
+## Latest Blog Posts
+
 <!-- start: feed -->
 - [Toolist](https://xiaotian.dev/develop/toolist/)
 - [我是如何排版课程报告的](https://xiaotian.dev/notes/how-do-i-write-report/)
