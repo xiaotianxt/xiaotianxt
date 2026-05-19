@@ -1,8 +1,8 @@
 <p align="center">
 <picture>
-  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-white.svg">
-  <source media="(prefers-color-scheme: light)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg">
-  <img height="150px" alt="Github Contributions" width="100%" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg">
+  <source media="(prefers-color-scheme: dark)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-white.svg?v=20260519-2">
+  <source media="(prefers-color-scheme: light)" width="100%" srcset="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg?v=20260519-2">
+  <img height="150px" alt="Github Contributions" width="100%" src="https://github.com/xiaotianxt/xiaotianxt/raw/main/img/profile-black.svg?v=20260519-2">
 </picture>
 </p>
 
