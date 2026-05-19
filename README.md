@@ -12,7 +12,7 @@ Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cm
 
 - 🏷️ My girlfriend and I share the same nickname: Xiaotian (小田).
 - 🍎 My dream job is to be an Apple Genius at an Apple Store.
-- 📚 David R. O'Hallaron, co-author of CS:APP and Professor Emeritus at Carnegie Mellon, gave me an A in Operating Systems.
+- 📚 In [15-410](https://www.cs.cmu.edu/~410/), I was honored to receive an A on P3 from [David R. O'Hallaron](https://www.cs.cmu.edu/~droh/), co-author of [CS:APP](https://csapp.cs.cmu.edu/3e/about.html), and to be recommended as a TA.
 
 ## Recently Working On
 
