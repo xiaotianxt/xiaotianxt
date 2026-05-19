@@ -11,6 +11,15 @@
 - :apple: Big fan of Apple products.
 - :email: How to reach me **yupei@xiaotian.dev**
 
+## Recently Working On
+
+I'm currently vibe-coding small Rust tools and AI skills that make local workflows faster, more scriptable, and more agent-friendly.
+
+- 🦀 [cx](https://github.com/xiaotianxt/cx): Fast local Codex launcher for slot management, usage-aware account selection, stdin wrapping, and local usage stats.
+- 💬 [tg](https://github.com/xiaotianxt/tg): Local Telegram chat history CLI for macOS and Linux, built for fast search, export, and agent-readable workflows.
+- 💸 [mon](https://github.com/xiaotianxt/mon): AI-native Monarch Money CLI for structured local finance workflows.
+- 🧰 [skills](https://github.com/xiaotianxt/skills): Personal Codex and agent skills for Gmail, Calendar, GitHub PRs, OCR, learning workflows, and local automation.
+
 <!-- start: feed -->
 - [Toolist](https://xiaotian.dev/develop/toolist/)
 - [我是如何排版课程报告的](https://xiaotian.dev/notes/how-do-i-write-report/)
