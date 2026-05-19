@@ -7,7 +7,7 @@
 </p>
 
 - :school: Studying in [Carnegie Mellon University](https://www.cmu.edu/)
-- :computer: Amateur coder with great passion.
+- :computer: Building sharp Rust tools, AI-native workflows, and local automations.
 - :apple: Big fan of Apple products.
 - :email: How to reach me **yupei@xiaotian.dev**
 
