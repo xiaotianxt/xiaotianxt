@@ -6,10 +6,13 @@
 </picture>
 </p>
 
-- :school: Studying in [Carnegie Mellon University](https://www.cmu.edu/)
-- :computer: Building sharp Rust tools, AI-native workflows, and local automations.
-- :apple: Big fan of Apple products.
-- :email: How to reach me **yupei@xiaotian.dev**
+Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cmu.edu/). I build sharp Rust tools, AI-native workflows, and local automations, and I'm a big fan of Apple products. Reach me at **yupei@xiaotian.dev**.
+
+## Fun Facts
+
+- 🏷️ My girlfriend and I share the same nickname: Xiaotian (小田).
+- 🍎 My dream job is to be an Apple Genius at an Apple Store.
+- 📚 David R. O'Hallaron, co-author of CS:APP and Professor Emeritus at Carnegie Mellon, gave me an A in Operating Systems.
 
 ## Recently Working On
 
