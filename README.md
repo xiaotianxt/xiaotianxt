@@ -25,6 +25,12 @@ I'm currently vibe-coding small Rust tools and AI skills that make local workflo
 - 🔐 Did you know macOS already has a native secret [key](https://github.com/xiaotianxt/key)-value store, so your API key does not need to live in `.env`?
 - 🧰 My agent is not smart enough to nail everything, so here are my [skills](https://github.com/xiaotianxt/skills).
 
+## Projects I've Worked On
+
+- [PKU-Thesis-Download](https://github.com/xiaotianxt/PKU-Thesis-Download) is a 纯手工古法打造 user script that downloads theses from [学位论文](https://www.lib.pku.edu.cn/portal/cn/zy/dzzy/xueweilunwen).
+- [Bypass Cloudflare for GitHub Action](https://github.com/xiaotianxt/bypass-cloudflare-for-github-action): never receive 403 Forbidden from Cloudflare again.
+- [typst-cv](https://github.com/xiaotianxt/typst-cv): A modular resume template to help you survive the 2026 job market.
+
 ## Latest Blog Posts
 
 <!-- start: feed -->
