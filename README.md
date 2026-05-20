@@ -20,6 +20,7 @@ I'm currently vibe-coding small Rust tools and AI skills that make local workflo
 
 - 🦀 [cx](https://github.com/xiaotianxt/cx): Fast local Codex launcher for slot management, usage-aware account selection, stdin wrapping, and local usage stats.
 - 💬 [tg](https://github.com/xiaotianxt/tg): Local Telegram chat history CLI for macOS and Linux, built for fast search, export, and agent-readable workflows.
+- 🌐 [bro](https://github.com/xiaotianxt/bro): Rust-native MCP server for controlling a real local browser through a small WebExtension bridge.
 - 💸 [mon](https://github.com/xiaotianxt/mon): AI-native Monarch Money CLI for structured local finance workflows.
 - 🧰 [skills](https://github.com/xiaotianxt/skills): Personal Codex and agent skills for Gmail, Calendar, GitHub PRs, OCR, learning workflows, and local automation.
 
