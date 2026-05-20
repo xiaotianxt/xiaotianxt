@@ -10,7 +10,7 @@ Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cm
 
 ## Fun Facts
 
-- 🍎 My dream job is to be an Apple Genius at an Apple Store.
+- 🍎 My dream job is to be an [Apple Genius](https://www.reddit.com/r/mac/comments/ssuvhu/in_may_2001_steve_jobs_introduces_the_genius_bar/) at an Apple Store.
 - 📚 In [15-410](https://www.cs.cmu.edu/~410/), I was honored to receive an A on P3 from [David R. O'Hallaron](https://www.cs.cmu.edu/~droh/), co-author of [CS:APP](https://csapp.cs.cmu.edu/3e/about.html), and to be recommended as a TA.
 - 🏷️ My girlfriend and I share the same nickname: Xiaotian (小田).
 
