@@ -16,13 +16,14 @@ Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cm
 
 ## Recently Working On
 
-I'm currently vibe-coding small Rust tools and AI skills that make local workflows faster, more scriptable, and more agent-friendly.
+I'm currently vibe-coding small Rust tools and AI skills that make local workflows faster, weirder, and more agent-friendly.
 
-- 🦀 [cx](https://github.com/xiaotianxt/cx): Fast local Codex launcher for slot management, usage-aware account selection, stdin wrapping, and local usage stats.
-- 💬 [tg](https://github.com/xiaotianxt/tg): Local Telegram chat history CLI for macOS and Linux, built for fast search, export, and agent-readable workflows.
-- 🌐 [bro](https://github.com/xiaotianxt/bro): Rust-native MCP server for controlling a real local browser through a small WebExtension bridge.
-- 💸 [mon](https://github.com/xiaotianxt/mon): AI-native Monarch Money CLI for structured local finance workflows.
-- 🧰 [skills](https://github.com/xiaotianxt/skills): Personal Codex and agent skills for Gmail, Calendar, GitHub PRs, OCR, learning workflows, and local automation.
+- 🦀 What if you have 10 ChatGPT Plus accounts and have to log in and out every 10 minutes? Replace Codex with [cx](https://github.com/xiaotianxt/cx).
+- 💬 You and your code agent can now wander through your [tg](https://github.com/xiaotianxt/tg) message ocean.
+- 🌐 [bro](https://github.com/xiaotianxt/bro), this is the best browser-use tool I've seen in the last 10 years.
+- 💸 Want to keep up with financial performance? [mon](https://github.com/xiaotianxt/mon)ey, but queryable.
+- 🔐 Did you know macOS already has a native secret [key](https://github.com/xiaotianxt/key)-value store, so your API key does not need to live in `.env`?
+- 🧰 My agent is not smart enough to nail everything, so here are my [skills](https://github.com/xiaotianxt/skills).
 
 ## Latest Blog Posts
 
