@@ -6,7 +6,7 @@
 </picture>
 </p>
 
-Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cmu.edu/). I build sharp Rust tools, AI-native workflows, and local automations, and I'm a big fan of Apple products. Reach me at **yupei@xiaotian.dev**.
+Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cmu.edu/). I feel ridiculously lucky to be building in the AI era, where curiosity, taste, and a small dose of engineering can turn into real leverage. Reach me at **yupei@xiaotian.dev**.
 
 ## Fun Facts
 
