@@ -19,7 +19,7 @@ Hi, I'm Yupei, currently studying at [Carnegie Mellon University](https://www.cm
 I'm currently vibe-coding small Rust tools and AI skills that make local workflows faster, weirder, and more agent-friendly.
 
 - 🦀 What if you have 10 ChatGPT Plus accounts and have to log in and out every 10 minutes? Replace Codex with [cx](https://github.com/xiaotianxt/cx).
-- 💬 You and your code agent can now wander through your [tg](https://github.com/xiaotianxt/tg) message ocean.
+- 💬 I'm too lazy to even copy-paste chat history into AI, so I let [tg](https://github.com/xiaotianxt/tg) read it instead.
 - 🌐 [bro](https://github.com/xiaotianxt/bro), this is the best browser-use tool I've seen in the last 10 years.
 - 💸 Want to keep up with financial performance? [mon](https://github.com/xiaotianxt/mon)ey, but queryable.
 - 🔐 Did you know macOS already has a native secret [key](https://github.com/xiaotianxt/key)-value store, so your API key does not need to live in `.env`?
