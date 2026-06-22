@@ -8,7 +8,7 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Andy Tian's GitHub Stats, Rank: A</title>
+        <title id="titleId">Andy Tian's GitHub Stats, Rank: A-</title>
         <desc id="descId">Total Stars Earned: 279, Total Commits  (last year) : 899, Total PRs: 61, Total Issues: 52, Contributed to (last year): 10</desc>
         <style>
           .header {
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 60.56993473042882;
+        stroke-dashoffset: 64.90756901232405;
       }
     }
   
@@ -143,7 +143,7 @@
         <g class="rank-text">
           
         <text x="-5" y="3" alignment-baseline="central" dominant-baseline="central" text-anchor="middle" data-testid="level-rank-icon">
-          A
+          A-
         </text>
       
         </g>
