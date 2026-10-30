@@ -1,8 +1,9 @@
 name: update readme with RSS feed
 
 on:
-  # schedule:
-    # - cron: "0 8 * * *"
+  schedule:
+    # 每天 08:00 UTC 自动从博客 RSS 更新 README
+    - cron: "0 8 * * *"
 
   # allows to manually run the job at any time
   workflow_dispatch:
