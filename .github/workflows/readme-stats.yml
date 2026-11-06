@@ -21,35 +21,39 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Generate top languages (dark)
-        uses: stats-organization/github-readme-stats-action@2d1ecd1a7becec017c1cd1e7bd626ef223266b32
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&langs_count=8&show_icons=true&locale=en&layout=compact&theme=onedark&hide_border=true&bg_color=0D1117
           path: img/top-langs-dark.svg
+          fail_on_error: true
 
       - name: Generate top languages (light)
-        uses: stats-organization/github-readme-stats-action@2d1ecd1a7becec017c1cd1e7bd626ef223266b32
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&langs_count=8&show_icons=true&locale=en&layout=compact&hide_border=true
           path: img/top-langs-light.svg
+          fail_on_error: true
 
       - name: Generate stats (dark)
-        uses: stats-organization/github-readme-stats-action@2d1ecd1a7becec017c1cd1e7bd626ef223266b32
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=onedark&hide_border=true&bg_color=0D1117
           path: img/github-stats-dark.svg
+          fail_on_error: true
 
       - name: Generate stats (light)
-        uses: stats-organization/github-readme-stats-action@2d1ecd1a7becec017c1cd1e7bd626ef223266b32
+        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2.1.0
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true
           path: img/github-stats-light.svg
+          fail_on_error: true
 
       - name: Commit generated SVG files
         run: |
