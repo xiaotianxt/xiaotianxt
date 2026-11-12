@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Andy Tian&#39;s GitHub Stats, Rank: A-</title>
-        <desc id="descId">Total Stars Earned: 275, Total Commits  (last year) : 1141, Total PRs: 68, Total Issues: 54, Contributed to (last year): 14</desc>
+        <desc id="descId">Total Stars Earned: 279, Total Commits  (last year) : 1145, Total PRs: 68, Total Issues: 54, Contributed to (last year): 14</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 66.70718269390201;
+        stroke-dashoffset: 66.53095144977917;
       }
     }
   
@@ -169,7 +169,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >275</text>
+      >279</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
